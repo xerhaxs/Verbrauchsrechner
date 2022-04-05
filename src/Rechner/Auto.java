@@ -6,12 +6,13 @@ public abstract class Auto {
     public Auto() {
 
     }
-
-    public void fahre(double pStrecke) {
+        public void fahre(double pStrecke) {
         zKilometerstand = zKilometerstand + pStrecke;
     }
     public double getKilometerstand() {
         return zKilometerstand;
     }
+    abstract double getFahrtkosten();
+
     abstract double getReichweite();
 }

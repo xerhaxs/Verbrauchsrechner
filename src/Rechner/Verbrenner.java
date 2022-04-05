@@ -5,7 +5,8 @@ public class Verbrenner extends Auto {
     double zVerbrauch;
     double zKraftstoffkosten;
 
-    public Verbrenner(double pVerbrauch, double pKraftstoffkosten) {
+    public Verbrenner(double pVerbrauch, double pKraftstoffkosten, double pTankinhalt) {
+        zTankinhalt = pTankinhalt;
         zVerbrauch = pVerbrauch;
         zKraftstoffkosten = pKraftstoffkosten;
     }
@@ -16,14 +17,17 @@ public class Verbrenner extends Auto {
         return zTankinhalt;
     }
     public void fahre(double pStrecke) {
-        zKilometerstand = zKilometerstand + pStrecke;
-        zTankinhalt = zTankinhalt - zVerbrauch;
+        super.fahre(pStrecke);
+        zTankinhalt = zTankinhalt - (zVerbrauch / 100) * pStrecke;
     }
     public double getVerbrauch() {
         return zVerbrauch;
     }
     public double getKraftstoffkosten() {
         return zKraftstoffkosten;
+    }
+    public double getFahrtkosten() {
+        return zKraftstoffkosten * ((zVerbrauch / 100) * zKilometerstand);
     }
     public void setKraftstoffkosten(double pKraftstoffkosten) {
         zKraftstoffkosten = pKraftstoffkosten;
