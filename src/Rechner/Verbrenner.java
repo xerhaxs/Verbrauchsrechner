@@ -1,10 +1,5 @@
 package Rechner;
 
-import GUI.ErrorTankinhalt;
-import GUI.GUIMain;
-
-import javax.swing.*;
-
 public class Verbrenner extends Auto {
     double zTankinhalt;
     double zVerbrauch;
@@ -25,13 +20,13 @@ public class Verbrenner extends Auto {
         return zTankinhalt;
     }
     public void fahre(double pStrecke) {
-        if (zTankinhalt / zVerbrauch * pStrecke > 0) {
+        if (zTankinhalt - (zVerbrauch / 100) * pStrecke >= 0) {
             super.fahre(pStrecke);
             zTankinhalt = zTankinhalt - (zVerbrauch / 100) * pStrecke;
+        } else if (zVerbrauch / 100 * zTankinhalt >= 0) {
+            super.fahre(zVerbrauch / 100 * zTankinhalt);
+            zTankinhalt = 0;
         } else {
-            ErrorTankinhalt dialog = new ErrorTankinhalt();
-            dialog.pack();
-            dialog.setVisible(true);
             System.out.println("Der Tank ist leer.");
         }
     }

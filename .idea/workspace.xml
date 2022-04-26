@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a91a7e-b601-4317-bc46-3976823c227a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GUI/ErrorTankinhalt.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GUI/ErrorTankinhalt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/ErrorTankinhalt$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/ErrorTankinhalt$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/ErrorTankinhalt$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/ErrorTankinhalt$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/ErrorTankinhalt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/GUIMain$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/GUIMain$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/GUIMain$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/GUIMain$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/GUIMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Verbrauchsrechner/GUI/GUIMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Verbrauchsrechner/Rechner/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Verbrauchsrechner/Rechner/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Verbrauchsrechner/Rechner/Verbrenner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Verbrauchsrechner/Rechner/Verbrenner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/ErrorTankinhalt.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/ErrorTankinhalt.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/GUIMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rechner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rechner/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rechner/Verbrenner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rechner/Verbrenner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
