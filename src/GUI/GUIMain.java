@@ -22,7 +22,7 @@ public class GUIMain {
     private JButton tanke25LButton;
     private JSpinner aFahrtkostensummeTextField;
     private JLabel summeFahrtkostenLabel;
-    Verbrenner verbrenner1 = new Verbrenner(5, 2, 20);
+    Verbrenner verbrenner1 = new Verbrenner(10, 2, 20);
 
     public GUIMain() {
         aTankinhaltTextField.setValue(verbrenner1.getTankinhalt());
@@ -67,7 +67,13 @@ public class GUIMain {
         aKilometerstandTextField.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
-                System.out.println("HI");
+
+            }
+        });
+        aTankinhaltTextField.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                verbrenner1.setTankinhalt((Double) aTankinhaltTextField.getValue());
             }
         });
     }
