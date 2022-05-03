@@ -4,14 +4,20 @@ public class Verbrenner extends Auto {
     double zTankinhalt;
     double zVerbrauch;
     double zKraftstoffkosten;
+    double zTankgroesse;
 
-    public Verbrenner(double pVerbrauch, double pKraftstoffkosten, double pTankinhalt) {
+    public Verbrenner(double pVerbrauch, double pKraftstoffkosten, double pTankinhalt, double pTankgroesse) {
         zTankinhalt = pTankinhalt;
         zVerbrauch = pVerbrauch;
         zKraftstoffkosten = pKraftstoffkosten;
+        zTankgroesse = pTankgroesse;
     }
     public void tanken(double pMenge) {
-        zTankinhalt = zTankinhalt + pMenge;
+        if (zTankinhalt + pMenge <= zTankgroesse) {
+            zTankinhalt = zTankinhalt + pMenge;
+        } else if (zTankgroesse - zTankinhalt <= pMenge) {
+            zTankinhalt = zTankgroesse;
+        }
     }
     public void setTankinhalt(double pTankinhalt) {
         zTankinhalt = pTankinhalt;
