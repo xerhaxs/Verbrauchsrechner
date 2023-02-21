@@ -1,2 +1,2 @@
 # Verbrauchsrechner
- Verbrauchsrechner für KFZs
+ Verbrauchsrechner für KFZs (kleines Schulprojekt in Java)
